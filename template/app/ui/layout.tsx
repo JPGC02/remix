@@ -14,6 +14,8 @@ export function Layout() {
       <header>
         <nav>
           <a href={routes.home.href()}>Home</a>
+          {' · '}
+          <a href={routes.components.href()}>Components</a>
         </nav>
       </header>
       <main>{children}</main>

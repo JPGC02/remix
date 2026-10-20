@@ -1,4 +1,5 @@
 import type { RemixNode } from 'remix/ui'
+import { RMX_01, RMX_01_GLYPHS } from 'remix/ui/theme'
 
 import { routes } from '../routes.ts'
 
@@ -16,8 +17,10 @@ export function Document() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
+        <RMX_01 />
       </head>
       <body>
+        <RMX_01_GLYPHS />
         {children}
         <script type="module" src={routes.assets.href({ path: 'app/assets/entry.ts' })}></script>
       </body>

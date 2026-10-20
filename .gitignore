@@ -19,3 +19,5 @@ autoresearch-results/
 .env
 
 /reference
+
+.claude/
